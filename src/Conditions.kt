@@ -15,4 +15,8 @@ fun main(args:Array<String>){
 
     var Hhaphone:Boolean = false
     println(!Hhaphone)
+
+    var vof = false
+    println(!vof)
+
 }

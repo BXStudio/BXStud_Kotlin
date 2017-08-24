@@ -4,22 +4,25 @@ fun main(args:Array<String>){
     // Affichage du résultat
     println(map.get(1))
     println(map[1])
+    println(map[4])
 
     var array = arrayOf(2,4,6,8)
     println(array[1])
 
     var list = listOf(3,5,7,9)
-    println("Affichage d'une valeur" + list[3]+ ".")
+    println("Affichage d'une valeur " + list[3]+ ".")
 
     println("-*- Affichage de toutes les valeurs -*-")
-    var compt= -1
+    var compt= 0
     for(elem in list){
-        compt++
         println("list[$compt]=" + elem)
+        ++compt
     }
+
     // Il n'est pas possible de mettre à jour une listOf: list[0]=1 <- incorrect
     // Pour cela, il est possible de le faire avec une mutableListOf
     var list2 = mutableListOf(4,5,6,7)
+    println(list2[0])
     list2[0]=1
     println("list2[0]= " + list2[0])
 }

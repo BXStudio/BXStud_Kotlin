@@ -10,7 +10,7 @@ fun main(args: Array<String>){
     val name= readLine()
 
     print("Enter your age : ")
-    val age:Int= readLine()!!.toInt()
+    var age:Int= readLine()!!.toInt()
 
     print("Enter your job : ")
     val job:String?

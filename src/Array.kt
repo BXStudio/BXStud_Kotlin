@@ -4,7 +4,7 @@ fun main(args:Array <String>){
     arrayInt[0]=1
     arrayInt[1]=3
     println("Le contenu du tableau est : ")
-    var case=-1
+    var case=-1 // Création du compteur
     for (content in arrayInt){
         case++
         println("arrayInt[$case]= $content")
@@ -12,13 +12,13 @@ fun main(args:Array <String>){
 
     println("--- Entrez les noms ---")
     var arrayStr=Array<String>(4){""}
-    for(index in 1..3){
+    for(index in 0..3){
         print("arrayStr[$index]= ")
         arrayStr[index]= readLine()!!
     }
 
     println("--- Vous avez entré --- ")
-    for(index in 1..3){
+    for(index in 0..3){
         println("arrayStr[$index]= " +arrayStr[index])
     }
 }

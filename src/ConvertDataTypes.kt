@@ -1,4 +1,3 @@
-
 fun main(args:Array<String>){
 
     var v1:Int=10
